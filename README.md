@@ -2,6 +2,8 @@
 
 你可以fork这个仓库，自行保管维护作为CTF学习笔记仓库。
 
+> **注意：** 请先fork本repo，再将你自己的repo clone到本地，不要直接clone本repo，否则你将无法push修改。
+
 ## Git教程
 
 ### 安装Git和github-cli(gh)
