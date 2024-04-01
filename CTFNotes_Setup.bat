@@ -58,5 +58,9 @@ if errorlevel 1 (
     echo Your GitHub username has been added to the .env file successfully.
 )
 
+REM 创建文件夹
+echo Creating folders...
+mkdir %githubusername%
+
 echo Script completed!
 pause
