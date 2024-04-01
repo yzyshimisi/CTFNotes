@@ -33,7 +33,9 @@ gh主要作用是提供GitHub认证
 gh auth login
 ```
 
-### 3. fork仓库
+全部默认按回车即可
+
+### 3. Fork仓库
 
 在本仓库右上角点击`Fork`，将本仓库fork到你的账号下。
 
