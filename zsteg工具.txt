@@ -1,0 +1,53 @@
+zsteg
+    一个比StegSolve更方便的工具
+
+简介
+  zsteg可以检测PNG和BMP图片里的隐写数据。目前，zsteg支持检测：
+      LSB steganography in PNG & BMP
+      zlib-compressed data
+      OpenStego
+      Camouflage 1.2.1
+      LSB with The Eratosthenes set
+  Github项目：
+      https://github.com/zed-0xff/zsteg
+
+安装zsteg
+    git clone https://github.com/zed-0xff/zsteg
+    cd zsteg/
+    gem install zsteg
+    鉴于国内网速，gem install如果一直没反应，更换RubyGems的源。
+
+使用方法
+@  查看帮助：
+    zsteg -h
+
+@  查看LSB信息
+    zsteg pcat.png
+
+@  检测zlib
+    # -b的位数是从1开始的
+    zsteg zlib.bmp -b 1 -o  xy -v
+
+@  显示细节
+    zsteg pcat.png -v
+
+@  尝试所有已知的组合
+    zsteg pcat.png -a
+
+@  导出内容
+    zsteg -e "b1,bgr,lsb,xy" pcat.png > p.txt（导出指定通道的内容）
+    zsteg -e extradata:0 misc17.png > flag.txt（导出指定位置的内容）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
